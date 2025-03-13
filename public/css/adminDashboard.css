@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.logout-button, .delete-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.logout-button {
+    background-color: #f44336;
+    color: white;
+}
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+.delete-button {
+    background-color: #28a745;
+    color: white;
+}
+.delete-button:hover {
+    background-color: #218838;
+}
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background: white;
+}
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-card img {
+    width: 60px;
+    border-radius: 50%;
+}
+.password-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.update-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.update-button:hover {
+    background-color: #0056b3;
+}

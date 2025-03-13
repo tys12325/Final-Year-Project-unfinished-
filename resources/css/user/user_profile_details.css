@@ -1,0 +1,169 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 Feb 2025, 2:50:03 am
+    Author     : SHABI
+*/
+
+
+
+.file-label.uploaded i {
+    color: black; 
+}
+
+#fileName {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.AppContent {
+     max-width: 1800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.insideContent{
+    display: flex;
+    gap: 50px;
+    
+}
+.profile-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the container */
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    transition: 0.3s;
+}   
+
+.file-input {
+    display: none; /* Hide default file input */
+}
+
+.profile-container:hover .profile-picture {
+    opacity: 0.7; /* Add slight transparency on hover */
+}
+
+
+.innerContent, .innerContentRight {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: top;
+   
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#otherNationality{
+    width: 96%
+}
+.file-label {
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+     color:#c9c8c5;
+}
+
+
+.enroll-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+.enroll-btn:hover {
+    background-color: #5a6268;
+}
+
+.alert-success, .alert-danger {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999; 
+    width: auto;
+    max-width: 90%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: showMessage 0.5s ease-out forwards;
+}
+
+.alert-success {
+    background-color: #4CAF50; 
+}
+
+.alert-danger {
+    background-color: #f44336; 
+}
+
+
+@keyframes showMessage {
+    0% {
+        opacity: 0;
+        top: -50px; 
+    }
+    100% {
+        opacity: 1;
+        top: 20px; 
+    }
+}
+
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* 1 second fade-out */
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 20px; 
+    }
+    100% {
+        opacity: 0;
+        top: -50px; 
+    }
+}

@@ -1,0 +1,159 @@
+.py-60 {
+  padding: 60px 0;
+  flex: 2;
+  max-width: 70%;
+  margin-top: 3%;
+  margin: auto; 
+  text-align: center;
+  
+}
+.full-width-section {
+  background: #f3f3f3;
+  width: 120%;
+  
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding: 0 20px; 
+  
+}
+section {
+  background: #f3f3f3;
+  display: block;
+ 
+}
+h2 {
+  font-family: Roboto-Light;
+  font-size: 32px;
+  color: #000;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.text-control-1 h2 {
+  margin-bottom: 20px;
+}
+
+.q-mark {
+  font-family: Roboto-bold;
+  color: #d40119;
+    padding: 15px 0 12px 12px;
+}
+.question {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #5c5c5c;
+  line-height: 1.5;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.material-icons.drop {
+  padding: 20px;
+  font-size: 2rem;
+  color: #d40119;
+  transition: transform 0.5s ease-in-out;
+}
+.answer {
+  font-size: 16px;
+  color: #5c5c5c;
+  padding: 16px;
+  padding-right: 40px;
+  padding-left: 45px;
+  padding-bottom: 32px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: justify;
+  text-justify: inter-word; 
+
+}
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.25s ease-in-out;
+}
+.qeustion-wrapper:after{
+    background-color: #cccccc;
+}
+.answer-wrapper {
+  display: none;
+}
+.icon-expend {
+  transform: rotateX(180deg);
+  transition: transform 0.75s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-expend {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.drop {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+  padding-right:10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .py-60 {
+    padding: 52px 0;
+  }
+  .text-control-1 h2 {
+    margin-bottom: 16px;
+  }
+  .accordion {
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 24px;
+    
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 1144px;
+  }
+}
+
+
+.accordion.active .question-wrapper {
+  background-color: #ebebeb; /* Change to your desired color */
+}
+
+.accordion.active .question {
+  color: #000; 
+}
+
+
+

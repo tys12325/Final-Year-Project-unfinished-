@@ -1,0 +1,134 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:04:34 pm
+    Author     : SHABI
+*/
+
+
+
+/*header body*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    text-align: center;
+    border-bottom: grey 1px solid;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    height: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 40px;
+}
+
+
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 40px 40px;
+
+}
+
+
+
+
+
+
+/*footer*/
+footer {
+    background: #f8f8f8;
+    padding: 40px 20px; 
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+#leftFoot {
+    text-align: left;
+    flex: 1; 
+    max-width: 45%; 
+}
+#middleFoot{
+     max-width: 20%; 
+}
+#rightFoot {
+    text-align: left; 
+    flex: 1; 
+    max-width: 10%; 
+    margin-left: auto;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#flwIcon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 15px;
+}
+
+#flwIcon li a {
+    font-size: 24px;
+    color: black;
+}
+
+#flwIcon li a:hover {
+    color:#666666; 
+}
+
+.copyright{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: relative;  
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
+}

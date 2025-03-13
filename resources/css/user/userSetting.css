@@ -1,0 +1,201 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:11:47 pm
+    Author     : SHABI
+*/
+#leftContener {
+    flex: 2; 
+    max-width:30%; 
+    margin-left: 3%;
+    margin-top: 3%;
+}
+#leftSettingContainer{
+    flex: 2; 
+    max-width:30%; 
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.Setting-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin-left: 15%;
+    width: 100%;
+    border: 1px grey solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+.title{
+    justify-items: center;
+}
+.setting-H3{
+    border-bottom: 3px black solid;
+    padding-bottom: 3px;
+    width: 200px;
+    
+}
+.Setting-list{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    
+    width: 100%;
+    
+}
+
+.setting-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.icon-btn{
+     background: #eee;
+    border: none;
+    padding: 8px;  
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+}
+
+.icon-btn:hover {
+    background: #ddd;
+}
+
+.logout-btn {
+    background-color: #d9534f; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+.logoutBtn{
+    justify-items: center;
+}
+
+.logout-btn:hover {
+    animation: shake 0.3s ease-in-out;
+    background-color: #c9302c;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+
+.alert-success, .alert-danger {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999; 
+    width: auto;
+    max-width: 90%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: showMessage 0.5s ease-out forwards;
+}
+
+.alert-success {
+    background-color: #4CAF50; 
+}
+
+.alert-danger {
+    background-color: #f44336; 
+}
+
+
+@keyframes showMessage {
+    0% {
+        opacity: 0;
+        top: -50px; 
+    }
+    100% {
+        opacity: 1;
+        top: 20px; 
+    }
+}
+
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* 1 second fade-out */
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 20px; 
+    }
+    100% {
+        opacity: 0;
+        top: -50px; 
+    }
+}

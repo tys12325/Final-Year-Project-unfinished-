@@ -1,0 +1,78 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:12:21 pm
+    Author     : SHABI
+*/
+
+.container {
+    max-width: 1000px ;
+    margin: auto;
+    margin-top: 150px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.header {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icon > a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    background: #f1f1f1;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon i {
+    font-size: 28px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.icon > a:hover {
+    border-color: #818587;
+    color: white;
+    background: #818587;
+    transform: scale(1.001);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon > a:hover i {
+    transform: scale(1.1);
+}
+
+
+.icon > a:active {
+    transform: scale(0.95);
+}
+
+

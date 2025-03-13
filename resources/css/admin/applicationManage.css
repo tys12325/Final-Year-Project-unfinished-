@@ -1,0 +1,127 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 Feb 2025, 6:50:17 pm
+    Author     : SHABI
+*/
+
+
+.container{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.application-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    width: 1500px;
+}
+
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.applicant-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    width: 35%;
+    background: #f8f9fa;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #ffffff;
+}
+
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.status-badge.submitted{
+    background-color: #ddd; 
+    color: #000;
+}
+.status-badge.verifying {
+    background-color: #ffc107; 
+    color: #000;
+    padding: 5px 13px;
+}
+
+.status-badge.checking {
+    background-color: #17a2b8; 
+    color: #fff;
+    padding: 5px 12px;
+}
+
+.status-badge.accepted {
+    background-color: #28a745; 
+    color: #fff;
+}
+
+.status-badge.rejected {
+    background-color: #dc3545; 
+    padding: 5px 13px;
+    color: #fff;
+}
+
+
+.btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: #0099ff;
+}
+.btn-primary:hover{
+     text-decoration:underline;
+     color: #3333ff;
+}
+
+
+

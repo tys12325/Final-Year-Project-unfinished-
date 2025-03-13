@@ -1,0 +1,117 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 20 Feb 2025, 8:23:03 pm
+    Author     : SHABI
+*/
+
+/* General Styling */
+.verify-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    margin-top: 140px;
+    
+}
+
+
+#phoneNum,#otpCode {
+    width: 94%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form{
+    margin-bottom: 10px;
+}
+
+
+.btn-submit, .sendOtp {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-submit:hover, .sendOtp:hover {
+    background: #0056b3;
+}
+
+.alert-message, .alert-danger {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999; 
+    width: auto;
+    max-width: 90%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: showMessage 0.5s ease-out forwards;
+}
+
+#backHomeNav{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+#backHomeNav:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+.alert-message {
+    background-color: #4CAF50; 
+}
+
+.alert-danger {
+    background-color: #f44336; 
+}
+
+
+@keyframes showMessage {
+    0% {
+        opacity: 0;
+        top: -50px; 
+    }
+    100% {
+        opacity: 1;
+        top: 20px; 
+    }
+}
+
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* 1 second fade-out */
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 20px; 
+    }
+    100% {
+        opacity: 0;
+        top: -50px; 
+    }
+}

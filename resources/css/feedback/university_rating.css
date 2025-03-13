@@ -1,0 +1,396 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 Feb 2025, 6:38:04 pm
+    Author     : SHABI
+*/
+
+.rating_stars {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    color: #918f8f;
+    position: relative;
+}
+
+.rating_stars span .fa-star-o,
+.rating_stars span .fa-star-half-o,
+.rating_stars span .fa-star {
+    transition: color 0.3s ease;
+}
+
+.rating_stars span.s.active-high .fa-star {
+    display: inline-block;
+    color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o {
+    display: inline-block;
+    color: #feb645;
+}
+
+.rating_stars span.r {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 10px;
+    left: 0;
+}
+
+
+.rating_stars span.r.r1 {
+    left: 10px;
+    width: 11px;
+}
+
+.rating_stars span.r.r2 {
+    left: 34px;
+    width: 12px;
+}
+
+.rating_stars span.r.r3 {
+    left: 58px;
+    width: 11px;
+}
+
+.rating_stars span.r.r4 {
+    left: 89px;
+    width: 12px;
+}
+
+.rating_stars span.r.r5 {
+    left: 121px;
+    width: 12px;
+}
+
+.values{
+    display: none;
+}
+
+.questions textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 100px;
+    overflow-y: auto;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+#wordCount {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+#wordCount.warning {
+    color: #e74c3c; 
+}
+
+.alert-success, .alert-danger {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 9999; 
+    width: auto;
+    max-width: 90%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: showMessage 0.5s ease-out forwards;
+}
+
+.alert-success {
+    background-color: #4CAF50; 
+}
+
+.alert-danger {
+    background-color: #f44336; 
+}
+
+
+@keyframes showMessage {
+    0% {
+        opacity: 0;
+        top: -50px; 
+    }
+    100% {
+        opacity: 1;
+        top: 20px; 
+    }
+}
+
+
+.fade-out {
+    animation: fadeOut 1s forwards; 
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        top: 20px; 
+    }
+    100% {
+        opacity: 0;
+        top: -50px; 
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    width: 800px;
+    margin:3rem auto;
+    padding: 2rem;
+    padding-right: 4rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.rating-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+.comment-section {
+    margin: 2rem 0;
+}
+
+
+textarea {
+    margin-top: 10px;
+    width: 95.5%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+#wordCount {
+    text-align: left;
+    margin: 0.5rem 0 0;
+    font-size: 0.9em;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color: #2980b9;
+}
+
+
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+
+@media (max-width: 480px) {
+    .rating-container {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .rating-labels {
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+}
+
+.mt-3 a{
+    color: #3498db;
+}
+
+.mt-3 a:hover{
+    color: #0000ff;
+}
+
+
+.swiper-container {
+    margin: 2rem 0;
+    padding: 1rem 0 3rem; 
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box; 
+}
+
+.swiper-slide > div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #000; 
+    font-size: 24px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+
+}
+
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #3498db;
+}
+
+
+.review-card p {
+    word-wrap: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+
+.review-card strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.review-card .text-muted {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.rating-display {
+    margin-top: 5px;
+}
+
+.fa-star {
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.view-comment-btn{
+    color: #3498db;
+    cursor: pointer;
+}
+
+.view-comment-btn:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+     background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    max-width: 600px; 
+    border-radius: 8px;
+    position: relative;
+    text-align: justify; 
+    line-height: 1.6;
+    overflow-y: auto;
+    max-height: 70vh;
+
+    overflow-wrap: break-word; 
+    white-space: normal; 
+}
+#full-comment-text {
+    white-space: pre-line; 
+    font-size: 16px;
+    color: #333; 
+    padding: 10px; 
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+

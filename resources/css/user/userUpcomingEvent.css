@@ -1,0 +1,105 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:23:40 pm
+    Author     : SHABI
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:10:48 pm
+    Author     : SHABI
+*/
+
+#favoriteList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+  
+}
+.ListContainer{
+    text-align: center;
+    width: 40%;
+    margin: 70px 7px 7px 7px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #999999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.searchBar{
+    
+    float: right;
+}
+#rightContener {
+    flex: 2;
+    max-width: 70%;
+    margin-top: 3%;
+    
+    
+}
+
+#leftContener {
+    flex: 2; 
+    max-width:30%; 
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+.listImages{
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
+    padding: 2px 2px 2px 2px;
+}
+.Title{
+    text-align: left;
+    font-weight: bold;
+}
+.paragraph{
+   
+    text-align:justify; 
+}
+
+
+.bookmark-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+}
+
+
+
+.bookmark-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.bookmark-btn:hover .bookmark-icon {
+    transform: scale(1.1);
+}

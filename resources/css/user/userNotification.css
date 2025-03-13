@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2025, 11:11:17 pm
+    Author     : SHABI
+*/
+
+#LeftContentNoti{
+    flex: 2; 
+    max-width:50%; 
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.notification-container {
+    flex: 2;
+    max-width: 80%;
+    margin-top: 5%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+
+}
+#rightsideNotification{ 
+    float: right;   
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+.notification-list {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    clear: both;
+    float: left;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    background: white;
+}
+
+.notification-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.notification-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.notification-content i {
+    color: #999;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.notification-content strong {
+    margin-right: 10px;
+}
+
+.date {
+    color: #777;
+}
+
